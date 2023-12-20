@@ -68,4 +68,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
 }
