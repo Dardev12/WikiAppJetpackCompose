@@ -54,7 +54,7 @@ dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.1")
+    implementation("androidx.activity:activity-compose:1.8.2")
     implementation(platform("androidx.compose:compose-bom:2023.08.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
@@ -70,4 +70,24 @@ dependencies {
 
     // Firebase
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Compose Navigation
+    implementation("androidx.navigation:navigation-compose:2.7.6")
+
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.2.2")
+
+    // Palette API
+    implementation("androidx.palette:palette-ktx:1.0.0")
+
+    // Koin for Android
+    implementation("io.insert-koin:koin-android:3.3.2")
+    implementation("io.insert-koin:koin-androidx-compose:3.4.1")
+
+    // DataStore Preferences
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    // Google Mobile Ads
+    implementation("com.google.android.gms:play-services-ads:22.6.0")
 }
