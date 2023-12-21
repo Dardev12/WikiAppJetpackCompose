@@ -10,7 +10,6 @@ import com.dardev.wikiappcours.util.Constants.DETAILS_ARGUMENT_KEY
 
 @Composable
 fun NavModel(navController: NavHostController) {
-
     NavHost(
         navController = navController,
         startDestination = Screen.Splash.route
@@ -36,5 +35,4 @@ fun NavModel(navController: NavHostController) {
 
         }
     }
-
 }
