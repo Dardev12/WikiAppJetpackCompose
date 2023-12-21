@@ -2,6 +2,7 @@ package com.dardev.wikiappcours.domain.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import com.dardev.wikiappcours.R
 
 sealed class OnBoardingPage(
     val tag:Int,
@@ -13,9 +14,27 @@ sealed class OnBoardingPage(
     val description:Int,
     val goTo:Int
 ) {
-    object First
+    object First: OnBoardingPage(
+        tag = 1,
+        image = R.drawable.gretting,
+        title = R.string.on_boarding_title_one,
+        description = R.string.on_boarding_one,
+        goTo = 2
+    )
 
-    object Second
+    object Second: OnBoardingPage(
+        tag = 2,
+        image = R.drawable.explore,
+        title = R.string.on_boarding_title_two,
+        description = R.string.on_boarding_two,
+        goTo = 3
+    )
 
-    object Third
+    object Third: OnBoardingPage(
+        tag = 3,
+        image = R.drawable.power,
+        title = R.string.on_boarding_title_three,
+        description = R.string.on_boarding_three,
+        goTo = 0
+    )
 }
