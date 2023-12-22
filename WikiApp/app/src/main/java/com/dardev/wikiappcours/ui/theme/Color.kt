@@ -12,7 +12,15 @@ val optionColor = Color(0xFF707070)
 val white = Color(0xFFFFFFFF)
 
 // Type Character
-
+val Roundtable = Color(0xFFA75C05)
+val Limgrave = Color(0xFF5D9C59)
+val Caria = Color(0xFF3358A2)
+val Caelid = Color(0xFF9C254D)
+val Leyndell = Color(0xFFD5B321)
+val Volcano = Color(0xFFC60026)
+val FireGiant = Color(0xFFB4CDE6)
+val FarumAzul = Color(0xFFAA9D8A)
+val otherArea = Color(0xFF187774)
 
 //
 val Colors.welcomeScreenBackgroundColor
@@ -35,3 +43,19 @@ val Colors.buttonBackgroundColor
 val Colors.buttonTextColor
     @Composable
     get() = if (isLight) NightModePV else LightModePV
+
+val Colors.statusBarColor
+    @Composable
+    get() = if (isLight) LightModePV else NightModeP
+
+val Colors.topAppBarBackgroundColor: Color
+    @Composable
+    get() = if (isLight) LightModeP  else NightModeP
+
+val Colors.topAppBarContentColor: Color
+    @Composable
+    get() = if (isLight) LightModePV  else NightModePV
+
+val Colors.TitleItemColor:Color
+    @Composable
+    get() = if (isLight) LightModePV  else NightModeP

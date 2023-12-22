@@ -91,4 +91,7 @@ dependencies {
 
     // Google Mobile Ads
     implementation("com.google.android.gms:play-services-ads:22.6.0")
+
+    // System UI Controller - Accompanist
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.21.5-rc")
 }
