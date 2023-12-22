@@ -23,4 +23,6 @@
     <string name="health_character">HP</string>
     <string name="potential_character">Potential</string>
     <string name="arcane_character">Arcane</string>
+    <string name="banner_ad_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_search_ad_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 </resources>

@@ -12,11 +12,15 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
+import com.dardev.wikiappcours.R
 import com.dardev.wikiappcours.domain.model.Character
 import com.dardev.wikiappcours.presentation.common.ListContent
+import com.dardev.wikiappcours.presentation.components.ads.BannerAds
 import com.dardev.wikiappcours.ui.theme.statusBarColor
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.google.android.gms.ads.AdSize
 import org.koin.androidx.compose.koinViewModel
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
@@ -47,7 +51,10 @@ fun HomeScreen(
         },
         bottomBar = {
             // Ads
-
+            BannerAds(
+                size = AdSize.BANNER,
+                id = stringResource(id = R.string.banner_ad_id)
+            )
         }
     ) {
         Column(

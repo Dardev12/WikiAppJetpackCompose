@@ -10,9 +10,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
+import com.dardev.wikiappcours.R
 import com.dardev.wikiappcours.domain.model.Character
 import com.dardev.wikiappcours.presentation.common.ListContent
+import com.dardev.wikiappcours.presentation.components.ads.BannerAds
+import com.google.android.gms.ads.AdSize
 import kotlinx.coroutines.launch
 import org.koin.androidx.compose.koinViewModel
 
@@ -47,6 +51,10 @@ fun SearchScreen(
         },
         bottomBar = {
             //Ads
+            BannerAds(
+                size = AdSize.BANNER,
+                id = stringResource(id = R.string.banner_search_ad_id)
+            )
         }
     ) {
         Column(
