@@ -2,6 +2,8 @@ package com.dardev.wikiappcours.presentation.screen.home
 
 
 import android.annotation.SuppressLint
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
@@ -9,6 +11,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import com.dardev.wikiappcours.domain.model.Character
 import com.dardev.wikiappcours.presentation.common.ListContent
@@ -47,9 +50,13 @@ fun HomeScreen(
 
         }
     ) {
-        ListContent(
-            characters = characters,
-            navController = navController
-        )
+        Column(
+            Modifier.padding(it)
+        ) {
+            ListContent(
+                characters = characters,
+                navController = navController
+            )
+        }
     }
 }

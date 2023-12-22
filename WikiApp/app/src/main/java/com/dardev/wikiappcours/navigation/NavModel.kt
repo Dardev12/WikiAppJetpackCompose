@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.dardev.wikiappcours.presentation.screen.detail.DetailScreen
 import com.dardev.wikiappcours.presentation.screen.home.HomeScreen
+import com.dardev.wikiappcours.presentation.screen.search.SearchScreen
 import com.dardev.wikiappcours.presentation.screen.splash.SplashScreen
 import com.dardev.wikiappcours.presentation.screen.welcome.WelcomeScreen
 import com.dardev.wikiappcours.util.Constants.DETAILS_ARGUMENT_KEY
@@ -36,7 +37,7 @@ fun NavModel(navController: NavHostController) {
             DetailScreen(navController = navController)
         }
         composable(route = Screen.Search.route){
-
+            SearchScreen(navController = navController)
         }
     }
 }
