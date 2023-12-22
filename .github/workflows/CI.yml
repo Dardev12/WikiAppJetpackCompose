@@ -6,9 +6,9 @@ name: Androdi build CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "FIN" ]
+    branches: [ "*" ]
   pull_request:
-    branches: [ "FIN" ]
+    branches: [ "*" ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,7 +25,7 @@ jobs:
       - name: Setup Java 
         uses: actions/setup-java@v1
         with:
-          java-version: 11.*
+          java-version: 17.*
           
       - name: Test Android App
         working-directory: WikiApp
