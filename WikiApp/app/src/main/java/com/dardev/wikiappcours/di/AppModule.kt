@@ -6,6 +6,7 @@ import com.dardev.wikiappcours.domain.remote.IWikiApi
 import com.dardev.wikiappcours.domain.use_cases.UseCases
 import com.dardev.wikiappcours.domain.use_cases.read_onboarding.ReadOnBoarding
 import com.dardev.wikiappcours.domain.use_cases.save_onboarding.SaveOnBoarding
+import com.dardev.wikiappcours.presentation.screen.detail.DetailViewModel
 import com.dardev.wikiappcours.presentation.screen.home.HomeViewModel
 import com.dardev.wikiappcours.presentation.screen.splash.SplashViewModel
 import com.dardev.wikiappcours.presentation.screen.welcome.WelcomeViewModel
@@ -26,4 +27,5 @@ val appModule = module {
     viewModelOf(::SplashViewModel)
     viewModelOf(::WelcomeViewModel)
     viewModelOf(::HomeViewModel)
+    viewModelOf(::DetailViewModel)
 }

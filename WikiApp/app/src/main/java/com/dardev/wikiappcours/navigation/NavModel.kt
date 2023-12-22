@@ -6,6 +6,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.dardev.wikiappcours.presentation.screen.detail.DetailScreen
 import com.dardev.wikiappcours.presentation.screen.home.HomeScreen
 import com.dardev.wikiappcours.presentation.screen.splash.SplashScreen
 import com.dardev.wikiappcours.presentation.screen.welcome.WelcomeScreen
@@ -32,7 +33,7 @@ fun NavModel(navController: NavHostController) {
                 type = NavType.StringType
             })
         ){
-
+            DetailScreen(navController = navController)
         }
         composable(route = Screen.Search.route){
 
