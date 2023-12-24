@@ -15,6 +15,12 @@
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable
+-keep class com.dardev.eldenringwiki.domain.model.** { *; }
+
+-dontwarn okhttp3.internal.platform.**
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**
 
 # If you keep the line number information, uncomment this to
 # hide the original source file name.

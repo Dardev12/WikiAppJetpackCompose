@@ -48,6 +48,29 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    // Commande pour recup clé SHA1 et 256 pour le build release firebase
+    /*
+      keytool -list -v -keystore /Pathdevotrekey/store -alias votrealiasici
+      ./gradlew signingReport
+    */
+     
+    signingConfigs {
+        release {
+            keyAlias ""
+            keyPassword  ''
+            storeFile file("")
+            storePassword ""
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
 }
 
 dependencies {
@@ -97,4 +120,9 @@ dependencies {
 
     // Swipe to Refresh - Accompanist
     implementation("com.google.accompanist:accompanist-swiperefresh:0.21.5-rc")
+
+    /*implementation 'org.bouncycastle:bcprov-jdk15on:1.67'
+    implementation 'org.conscrypt:conscrypt-android:2.5.2'
+    implementation 'org.openjsse:openjsse:1.1.14'*/
+
 }
